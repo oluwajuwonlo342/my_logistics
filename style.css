@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* width: 100vw; */
+}
+.container{
+    /* width: 100vw; */
+    background: url(./pexels-quintin-gellar-2199293.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin-top: -1%;
+}
+.con-image{
+    /* margin-left: 3%; */
+    margin-top: -45px;
+    
+
+}
+h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+/* .con-img{
+    background-color: white;
+    border-radius: 100px;
+    margin-top: 85px;
+    width: 7vw;
+    height: 15vh;
+} */
+.con-header{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 5%;
+    
+}
+nav{
+    margin-left: 48%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.body-container{
+    /* background-color: #000; */
+    justify-content: center;
+    height: 10vh;
+    width: 55%;
+    font-size: larger;
+    margin-left: 25%;
+    color: white;
+    text-align: center;
+    margin-top: 7%;
+    
+}
+#about{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.second-con{
+    margin-top: -4%;
+    display: flex;
+
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.text{
+    margin-top: 10%;
+    width: 50%;
+}
+.image{
+    margin-top: 2%;
+    margin-left: 6%;
+    animation-name: slidein;
+    animation-duration: 4s; 
+    animation-fill-mode: both;
+}
+.text-fade{
+    animation-name: fade;
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in;
+}
+p{
+    font-size: 20px;
+}
+hr{
+    width: 4%;
+    margin-left: 48%;
+    /* text-align: center; */
+    height: 0.7vh;
+    animation: line-grow 3s forwards;
+    background-color: #bf0620;
+    animation-iteration-count: infinite;
+    /* background-color: black; */
+}
+@keyframes line-grow {
+    from{
+        width: 0;
+    }
+    to{
+        width: 4%;
+    }
+}
+@keyframes slidein{
+    0%{
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @keyframes fade {
+    0%{opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+
+}
+.hr{
+    width: 16%;
+}
+.all-second{
+    margin-top: 3%;
+    margin-left: -8%;
+    display: flex;
+}
+.second-img{
+    margin-left: 11%;
+    margin-top: -5%;
+    
+}
+.second-text{
+    border-radius: 170px;
+    background-color: #bf0620;
+    width: 30vw;
+    height:50vh;
+    padding-top: 9%;
+    padding-left: 15px;
+    color: white;
+    font-size:19px;
+    margin-left: 2%;
+}
+.first{
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+.second{
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    
+    animation: typing 5s steps(40, end), blink-caret .75s step-end infinite;
+}
+.third{
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: typing 6s steps(40, end), blink-caret .75s step-end infinite;
+}
+.fourth{
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: typing 8s steps(40, end), blink-caret .75s step-end infinite;
+}
+.contact{
+    margin-top: 2%;
+    margin-left: 10%;
+    
+}
+.txt{
+    margin-top: 6px;
+    margin-left: 10%;
+}
+.form{
+    display: flex;
+    
+}
+form{
+    display: flex;
+}
+button{
+    background-color: #bf0620;
+    color: white;
+    width: 8vw;
+    height: 4vh;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    border: none;
+}
+textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+input{
+    width: 20vw;
+    height: 4.5vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.msg{
+    margin-left: 5%;
+}
+.info{
+    /* font-size: 12px; */
+    margin-top: 3%;
+}
+.num{
+    font-size: 16px;
+    
+}
+.add{
+    font-size: 16px;
+    margin-top: 3%;
+}
+
+.Email{
+    font-size: 16px;
+    margin-top: 3%;
+}
+.footer{
+    background-color: #bf0620;
+    margin-top: 3%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    color: white;
+    
+}
+.fa-envelope{
+    font-size: 20px;
+
+}
+.fa-phone{
+    font-size: 20px;
+}
+.fa-instagram{
+    font-size: 20px;
+    
+}
+a{
+    margin-left: 12px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 5vh;
+}
